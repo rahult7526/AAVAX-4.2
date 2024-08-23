@@ -24,11 +24,19 @@ func init() {
 		// When registering new actions, ALWAYS make sure to append at the end.
 		consts.ActionRegistry.Register(&actions.Transfer{}, actions.UnmarshalTransfer, false),
 
-		// TODO: register action: actions.CreateAsset
-		// TODO: register action: actions.MintAsset
+		
 
+
+
+		// TODO: register action: actions.CreateAsset
 		consts.ActionRegistry.Register(&actions.CreateAsset{}, actions.UnmarshalCreateAsset, false),
+
+		// TODO: register action: actions.MintAsset
 		consts.ActionRegistry.Register(&actions.MintAsset{}, actions.UnmarshalMintAsset, false),
+
+
+
+
 
 		consts.ActionRegistry.Register(&actions.BurnAsset{}, actions.UnmarshalBurnAsset, false),
 		consts.ActionRegistry.Register(&actions.ModifyAsset{}, actions.UnmarshalModifyAsset, false),
